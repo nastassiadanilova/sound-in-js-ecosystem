@@ -1,0 +1,140 @@
+body {
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #333;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3em;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.navbar {
+  background-color: #444;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Snowflake animation */
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: lightblue;
+  font-size: 2em;
+  user-select: none;
+  will-change: transform;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0.4;
+  }
+}
+
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+.snowflake:nth-child(2) {
+  left: 20%;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+.snowflake:nth-child(3) {
+  left: 30%;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+.snowflake:nth-child(4) {
+  left: 40%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+.snowflake:nth-child(5) {
+  left: 50%;
+  animation-duration: 8s;
+  animation-delay: 4s;
+}
+.snowflake:nth-child(6) {
+  left: 60%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+.snowflake:nth-child(7) {
+  left: 70%;
+  animation-duration: 7s;
+  animation-delay: 6s;
+}
+.snowflake:nth-child(8) {
+  left: 80%;
+  animation-duration: 5s;
+  animation-delay: 7s;
+}
+.snowflake:nth-child(9) {
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 8s;
+}
+.snowflake:nth-child(10) {
+  left: 100%;
+  animation-duration: 8s;
+  animation-delay: 9s;
+}
